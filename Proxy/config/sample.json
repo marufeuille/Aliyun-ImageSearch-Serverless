@@ -1,0 +1,9 @@
+{
+  "credentials": {
+    "accessKey": "YOUR_ACCESSKEY",
+    "accessKeySecret": "YOUR_SECRETKEY"
+  },
+  "endpoint": "http://imagesearch.ap-northeast-1.aliyuncs.com",
+  "apiVersion": "2018-01-20",
+  "instanceName": "YOUR_IMAGESEARCH_INSTANCENAME"
+}

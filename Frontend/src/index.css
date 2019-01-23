@@ -1,0 +1,30 @@
+
+#file_input {
+  display: none;
+}
+
+#input_label {
+  display: table-cell;
+  height: 150px;
+  width: 600px;
+  border: 1px dashed #9b9b9b;
+  border-radius: 5px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.container {
+  clear: left;
+}
+
+.dragover {
+  background-color: #e0ffff;
+}
+
+.hidden {
+  display: none;
+}
+
+.float {
+  float: left
+}
