@@ -22,12 +22,10 @@ sample is available at Frontend/config/sample.js
 use fcli command, like bellow.
 
 ```
-cd Proxy/
 fcli service create --service-name YOUR_SERVICE_NAME
-fcli function create --service-name YOUR_SERVICE_NAME --function-name YOUR_FUNCTION_NAME --runtime nodejs8 --handler index.handler --code-dir ./ 
+fcli trigger create --service-name Scraping --function-name MyDownloader --trigger-name YOUR_TRIGGER_NAME --type timer --config ./Proxy/trigger/http.yml
+fcli function create --service-name YOUR_SERVICE_NAME --function-name YOUR_FUNCTION_NAME --runtime nodejs8 --trigger-name YOUR_TRIGGER_NAME --type http --handler index.handler --code-dir ./Proxy/code
 ```
-**HTTP handler is needed**
-
 
 and note your endpoint
 
