@@ -27,13 +27,6 @@ fcli trigger create --service-name Scraping --function-name MyDownloader --trigg
 fcli function create --service-name YOUR_SERVICE_NAME --function-name YOUR_FUNCTION_NAME --runtime nodejs8 --trigger-name YOUR_TRIGGER_NAME --type http --handler index.handler --code-dir ./Proxy/code
 ```
 
-and note your endpoint
-
-
-```
-```
-
-
 ### Deploy Frontend
 Frontend is made by React(Material UI)
 You want to use this, you need to do is compiling and put to oss.
