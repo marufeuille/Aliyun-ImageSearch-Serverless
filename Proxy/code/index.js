@@ -23,10 +23,9 @@ module.exports.handler = (request, response, context) => {
   /* Setting Client */
   const creds = context.credentials;
   const client = new Client({
-            accessKeyId: creds['accessKeyId'],
-            accessKeySecret: creds['accessKeySecret'],
+            accessKeyId: process.env['accessKey'],
+            accessKeySecret: process.env['secretKey'],
             endpoint: process.env['endpoint'],
-            securityToken: creds["securityToken"],
             apiVersion: config.apiVersion
 
   });
