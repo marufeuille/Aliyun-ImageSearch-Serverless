@@ -27,3 +27,7 @@ Proxy/code/node_modules
 Frontend/ossutil_output/
 Frontend/src/config.js
 
+terraform.tfvars
+terraform.tfstate*
+.terraform
+*.zip
