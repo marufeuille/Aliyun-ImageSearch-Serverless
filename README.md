@@ -24,6 +24,15 @@ fcli trigger create --service-name YOUR_SERVICE_NAME --function-name YOUR_FUNCTI
 
 ```
 
+or Using terraform like this
+
+```
+cd Proxy/code
+zip -r ims.zip *
+cd ..
+terraform apply
+```
+
 #### Set Enviroment variables
 Open Function Compute Console.
 And set Environment variables for function that you have created above step.
