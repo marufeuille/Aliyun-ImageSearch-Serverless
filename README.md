@@ -14,10 +14,6 @@ Using FunctionCompute, OSS and ImageSearch.
 ### Deploy Proxy
 Proxy do get User Request from frontend and Pass to ImageSearch Instance.
 
-#### Create Config
-Create Config file into Proxy/code/config/default.js
-sample is available at Proxt/code/config/sample.js
-
 #### Deploy
 use fcli command, like bellow.
 
@@ -25,7 +21,19 @@ use fcli command, like bellow.
 fcli service create --service-name YOUR_SERVICE_NAME
 fcli function create --service-name YOUR_SERVICE_NAME --function-name YOUR_FUNCTION_NAME --runtime nodejs8 --handler index.handler --code-dir ./Proxy/code
 fcli trigger create --service-name YOUR_SERVICE_NAME --function-name YOUR_FUNCTION_NAME --trigger-name YOUR_TRIGGER_NAME --type timer --config ./Proxy/trigger/http.yml
+
 ```
+
+#### Set Enviroment variables
+Open Function Compute Console.
+And set Environment variables for function that you have created above step.
+
+set Enviroment variables bellow.
+
+- accessKey
+- secretKey
+- endpoint
+- instanceName
 
 ### Deploy Frontend
 Frontend is made by React(Material UI)
