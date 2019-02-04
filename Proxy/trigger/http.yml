@@ -1,5 +1,5 @@
 {
-    triggerConfig: {
+    "triggerConfig": {
         "authType" : "anonymous",
         "methods" : ["POST"]
     }
