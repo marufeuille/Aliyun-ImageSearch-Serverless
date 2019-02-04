@@ -21,15 +21,13 @@ const buffer_to_string = (buf) => {
 
 module.exports.handler = (request, response, context) => {
   /* Setting Client */
-  //const creds = context.credentials
-  const creds = config.credentials;
   const client = new Client({
-    accessKeyId: creds.accessKey,
-    accessKeySecret: creds.accessKeySecret,
-    endpoint: config.endpoint,
-    apiVersion: config.apiVersion
+      accessKeyId: process.env['accessKey'],
+      accessKeySecret: process.env['secretKey'],
+      endpoint: process.env['endpoint'],
+      apiVersion: config.apiVersion
   });
-  const instanceName = config.instanceName;
+  const instanceName = process.env['instanceName'];
 
   /* Parse Request Body */
   getRawBody(request)

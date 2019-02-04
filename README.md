@@ -15,16 +15,16 @@ Using FunctionCompute, OSS and ImageSearch.
 Proxy do get User Request from frontend and Pass to ImageSearch Instance.
 
 #### Create Config
-Create Config file into Frontend/config/default.js
-sample is available at Frontend/config/sample.js
+Create Config file into Proxy/code/config/default.js
+sample is available at Proxt/code/config/sample.js
 
 #### Deploy
 use fcli command, like bellow.
 
 ```
 fcli service create --service-name YOUR_SERVICE_NAME
+fcli function create --service-name YOUR_SERVICE_NAME --function-name YOUR_FUNCTION_NAME --runtime nodejs8 --handler index.handler --code-dir ./Proxy/code
 fcli trigger create --service-name YOUR_SERVICE_NAME --function-name YOUR_FUNCTION_NAME --trigger-name YOUR_TRIGGER_NAME --type timer --config ./Proxy/trigger/http.yml
-fcli function create --service-name YOUR_SERVICE_NAME --function-name YOUR_FUNCTION_NAME --runtime nodejs8 --trigger-name YOUR_TRIGGER_NAME --type http --handler index.handler --code-dir ./Proxy/code
 ```
 
 ### Deploy Frontend
