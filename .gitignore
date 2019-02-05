@@ -4,10 +4,10 @@
 */node_modules
 
 # testing
-Frontend/coverage
+Frontend/code/coverage
 
 # production
-Frontend/build
+Frontend/code/build
 
 # misc
 */.DS_Store
@@ -24,8 +24,9 @@ nohup.out
 
 Proxy/code/config/default.json
 Proxy/code/node_modules
-Frontend/ossutil_output/
-Frontend/src/config.js
+Frontend/code/node_modules
+Frontend/code/ossutil_output/
+Frontend/code/src/config.js
 
 terraform.tfvars
 terraform.tfstate*
